@@ -1,0 +1,4 @@
+freezegun==0.3.10
+pytz==2018.3
+requests==2.18.4
+vcrpy==1.11.1
