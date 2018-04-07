@@ -28,8 +28,8 @@ tox
 Return the latest quote for crypto coin.
 
 Parameters:
-    - Ticker: The crypto coin ticker. Type: String.
-    - Currency[optional]: The crypto coin value converted to currency. Type: String. Default: USD.
+- Ticker: The crypto coin ticker. Type: String.
+- Currency[optional]: The crypto coin value converted to currency. Type: String. Default: USD.
 
 ```
 >>> from brave.clients import SpotPriceClient
@@ -43,10 +43,10 @@ Parameters:
 Return the historic exchange data for crypto coin.
 
 Parameters:
-    - Ticker: The crypto coin ticker. Type: String.
-    - Start Date[optional]: Get historic data from start date. Type: Datetime. Default: Today.
-    - End Date[optional]: Get historic data until end date. Type: Datetime. Default: Today.
-    - Currency[optional]: The crypto coin value converted to currency. Type: String. Default: USD.
+- Ticker: The crypto coin ticker. Type: String.
+- Start Date[optional]: Get historic data from start date. Type: Datetime. Default: Today.
+- End Date[optional]: Get historic data until end date. Type: Datetime. Default: Today.
+- Currency[optional]: The crypto coin value converted to currency. Type: String. Default: USD.
 
 ```
 >>> from brave.clients import ExchangeClient
@@ -60,7 +60,7 @@ Parameters:
 Return the market capitalization data for all crypto coins tracked by Brave New Coin.
 
 Parameters:
-    - Days[optional]: Get market cap data for a number of days. Type: Integer. Default: 1.
+- Days[optional]: Get market cap data for a number of days. Type: Integer. Default: 1.
 
 ```
 >>> from brave.clients import MarketClient
