@@ -11,7 +11,7 @@ Supported APIs:
 
 # Install
 ```
-pip install https://github.com/pgrangeiro/python-bravenewcoin-client.git
+pip install git+https://github.com/pgrangeiro/python-bravenewcoin-client.git
 ```
 
 
