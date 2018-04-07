@@ -23,6 +23,11 @@ tox
 
 # Usage
 
+```
+>>> from brave.clients import SpotPriceClient
+>>> client = SpotPriceClient('customer', ('BraveNewCoin-API-Key', 'Token'))
+```
+
 ## Get crypto coin latest quotes
 
 Return the latest quote for crypto coin.
@@ -67,4 +72,25 @@ Parameters:
 >>> client = MarketClient('customer', ('BraveNewCoin-API-Key', 'Token'))
 >>> client.get()
 {'success': True, 'source': 'BraveNewCoin', 'endpoint': 'market-table', 'r...
+```
+
+## Parsing response data from Brave New Coin API
+
+You can create your own parser with your _parse_ class method.
+
+```
+from brave.clients import SpotClient
+
+
+class MyParser:
+
+    @classmethod
+    def parse(cls, data):
+        return {
+            'ticker': data['coin_id'],
+            'last_value': data['last_price'],
+        }
+
+client = SpotPriceClient('customer', ('BraveNewCoin-API-Key', 'Token'), MyParser)
+
 ```
