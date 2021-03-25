@@ -4,17 +4,29 @@
 #
 #    pip-compile --output-file requirements/test.txt requirements/test.in
 #
-certifi==2018.1.18        # via requests
-chardet==3.0.4            # via requests
+certifi==2018.1.18
+    # via requests
+chardet==3.0.4
+    # via requests
 freezegun==0.3.10
-idna==2.6                 # via requests, yarl
-multidict==4.1.0          # via yarl
-python-dateutil==2.7.2    # via freezegun
+    # via -r test.in
+idna==2.6
+    # via requests
+python-dateutil==2.7.2
+    # via freezegun
 pytz==2018.3
-pyyaml==3.12              # via vcrpy
+    # via -r test.in
+pyyaml==5.4
+    # via vcrpy
 requests==2.18.4
-six==1.11.0               # via freezegun, python-dateutil, vcrpy
-urllib3==1.22             # via requests
+    # via -r test.in
+six==1.11.0
+    # via
+    #   freezegun
+    #   vcrpy
+urllib3==1.22
+    # via requests
 vcrpy==1.11.1
-wrapt==1.10.11            # via vcrpy
-yarl==1.1.1               # via vcrpy
+    # via -r test.in
+wrapt==1.10.11
+    # via vcrpy
