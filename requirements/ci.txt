@@ -4,8 +4,13 @@
 #
 #    pip-compile --output-file requirements/ci.txt requirements/ci.in
 #
-pluggy==0.6.0             # via tox
-py==1.5.3                 # via tox
-six==1.11.0               # via tox
+pluggy==0.6.0
+    # via tox
+py==1.10.0
+    # via tox
+six==1.11.0
+    # via tox
 tox==3.0.0
-virtualenv==15.2.0        # via tox
+    # via -r ci.in
+virtualenv==15.2.0
+    # via tox
