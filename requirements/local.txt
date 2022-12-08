@@ -4,13 +4,23 @@
 #
 #    pip-compile --output-file requirements/local.txt requirements/local.in
 #
-certifi==2018.1.18        # via requests
-chardet==3.0.4            # via requests
-click==6.7                # via pip-tools
-first==2.0.1              # via pip-tools
-idna==2.6                 # via requests
+certifi==2022.12.7
+    # via requests
+chardet==3.0.4
+    # via requests
+click==6.7
+    # via pip-tools
+first==2.0.1
+    # via pip-tools
+idna==2.6
+    # via requests
 pip-tools==1.11.0
+    # via -r local.in
 pytz==2018.3
+    # via -r local.in
 requests==2.18.4
-six==1.11.0               # via pip-tools
-urllib3==1.22             # via requests
+    # via -r local.in
+six==1.11.0
+    # via pip-tools
+urllib3==1.22
+    # via requests
